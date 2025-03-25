@@ -1,0 +1,41 @@
+{
+  "attributes": ["core"],
+  "isd_as": "41-ffaa:1:6",
+  "dispatched_ports": "31000-32767",
+  "mtu": 1472,
+  "control_service": {
+    "cs": {
+      "addr": "127.0.0.1:31000"
+    }
+  },
+  "discovery_service": {
+    "cs": {
+      "addr": "127.0.0.1:31000"
+    }
+  },
+  "border_routers": {
+    "br": {
+      "internal_addr": "127.0.0.1:31002",
+      "interfaces": {
+        "1": {
+          "underlay": {
+            "local": "scion06:50046",
+            "remote": "scion04:50046"
+          },
+          "isd_as": "41-ffaa:1:4",
+          "link_to": "core",
+          "mtu": 1472
+        },
+        "2": {
+          "underlay": {
+            "local": "scion06:50056",
+            "remote": "scion05:50056"
+          },
+          "isd_as": "41-ffaa:1:6",
+          "link_to": "child",
+          "mtu": 1472
+        }
+      }
+    }
+  }
+}

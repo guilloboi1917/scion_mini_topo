@@ -1,0 +1,8 @@
+# Deployment Guide Bridge Router Configuration File
+# Save this file as /etc/scion/br.toml
+[general]
+id = "br"
+config_dir = "/etc/scion"
+
+[metrics]
+prometheus = "127.0.0.1:30401"
