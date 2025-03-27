@@ -13,7 +13,10 @@ origination_interval = "5s"
 propagation_interval = "5s"
 
 [metrics]
-prometheus = "127.0.0.1:30454"
+prometheus = "127.0.0.1:30454" # change to 0.0.0.0 to access from outside
+
+# [api]
+# addr = "0.0.0.0:8080"
 
 [beacon_db]
 connection = "/var/lib/scion/control.beacon.db"

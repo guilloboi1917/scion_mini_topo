@@ -36,6 +36,16 @@
           "isd_as": "42-ffaa:1:3",
           "link_to": "core",
           "mtu": 1472
+        },
+        "3": {
+          "underlay": {
+            "local" :"scion01:50016",
+            "remote" :"scion06:50016"
+          },
+          "isd_as": "41-ffaa:1:6",
+          "link_to": "peer",
+          "remote_interface_id": 3,
+          "mtu": 1472
         }
       }
     }

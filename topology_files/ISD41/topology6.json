@@ -31,8 +31,18 @@
             "local": "scion06:50056",
             "remote": "scion05:50056"
           },
-          "isd_as": "41-ffaa:1:6",
+          "isd_as": "41-ffaa:1:5",
           "link_to": "child",
+          "mtu": 1472
+        },
+        "3": {
+          "underlay": {
+            "local" :"scion06:50016",
+            "remote" :"scion01:50016"
+          },
+          "isd_as": "41-ffaa:1:1",
+          "link_to": "peer",
+          "remote_interface_id": 3,
           "mtu": 1472
         }
       }
